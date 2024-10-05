@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registro de Admin</title>
+    <!-- Link CDN do Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link do Arquivo CSS Personalizado  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link do Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 1rem;
+        }
+        .container input {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container button {
+            width: 100%;
+            padding: 0.5rem;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .container button:hover {
+            background: #555;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1rem;
+        }
+        .tabs button {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+        .tabs button.active {
+            color: #333;
+            border-bottom: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'login')">Login</button>
+            <button class="tab-link" onclick="openTab(event, 'register')">Registrar</button>
+        </div>
+        <div id="login" class="tab-content">
+            <h2>Login de Admin</h2>
+            <form action="login_process.php" method="post">
+                <input type="text" name="username" placeholder="Nome de Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="register" class="tab-content" style="display: none;">
+            <h2>Registrar</h2>
+            <form action="register_process.php" method="post">
+                <input type="text" name="username" placeholder="Nome de Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

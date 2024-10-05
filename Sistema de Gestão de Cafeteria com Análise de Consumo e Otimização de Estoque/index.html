@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Link CDN do Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link do Arquivo CSS Personalizado  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" class="logo">café <i class="fas fa-mug-hot"></i></a>
+        <nav class="navbar">
+            <a href="#home">início</a>
+            <a href="#about">sobre</a>
+            <a href="#menu">menu</a>
+            <a href="#review">avaliação</a>
+            <a href="#book">reserva</a>
+        </nav>
+        <a href="#" class="btn">reservar uma mesa</a>
+        <a href="login.html" class="btn">Login Admin</a>
+    </header>
+
+    <!-- INÍCIO -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Shelton Cafeteria Hot Coffee </h3>
+                <a href="#" class="btn">compre um agora</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+        <div class="image-slider">
+            <img src="image/home-img-1.png" alt="">
+            <img src="image/home-img-2.png" alt="">
+            <img src="image/home-img-3.png" alt="">
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="about">
+        <h1 class="heading">sobre nós <span>por que nos escolher</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="image/about-img.png" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">o que faz nosso café especial!</h3>
+                <p>Nosso café é especial porque selecionamos os melhores grãos de regiões renomadas, garantindo um sabor inigualável e uma experiência única em cada xícara. Os grãos são cultivados em altitudes elevadas, proporcionando um perfil de sabor complexo e rico. Além disso, nosso processo de torrefação é artesanal, permitindo que cada lote de café atinja seu potencial máximo de aroma e sabor. Valorizamos a sustentabilidade e o comércio justo, apoiando os agricultores locais e contribuindo para um futuro mais sustentável. Experimente nosso café e descubra a diferença que a qualidade e a dedicação fazem.</p>
+                <a href="#" class="btn">ler mais</a>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="image/about-icon-1.png" alt="">
+                        <h3>café de qualidade</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/about-icon-2.png" alt="">
+                        <h3>nossas filiais</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/about-icon-3.png" alt="">
+                        <h3>entrega grátis</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">nosso menu <span>menu popular</span></h1>
+        <div class="box-container" id="menu-items">
+            <!-- Itens do menu serão carregados dinamicamente aqui -->
+        </div>
+    </section>
+
+    <!-- AVALIAÇÃO -->
+    <section class="review" id="review">
+        <h1 class="heading">avaliações <span>o que as pessoas dizem</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-1.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>O melhor café que já provei! Aroma incrível e sabor excepcional. Recomendo a todos os amantes de café!" </p>
+                    <h3>Joao Matusse</h3>
+                    <span>cliente satisfeito</span>
+                </div>
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-2.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio quasi ut, illo ipsam assumenda.</p>
+                    <h3>john deo</h3>
+                    <span>cliente satisfeito</span>
+                </div>
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-3.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores aliquam hic quis! Eligendi, aliquam.</p>
+                    <h3>john deo</h3>
+                    <span>cliente satisfeito</span>
+                </div>
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-4.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class
+
+                        ="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi modi perspiciatis distinctio velit aliquid a.</p>
+                    <h3>john deo</h3>
+                    <span>cliente satisfeito</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- RESERVA -->
+    <section class="book" id="book">
+        <h1 class="heading">Reserva <span>Reservar uma mesa</span></h1>
+        <form action="book_form.php" method="post" id="booking-form">
+            <input type="text" name="name" placeholder="Nome" class="box">
+            <input type="email" name="email" placeholder="Email" class="box">
+            <input type="text" name="phone" placeholder="Telefone" class="box">
+            <input type="text" name="address" placeholder="Endereço" class="box">
+            <input type="text" name="persons" placeholder="Quantas pessoas" class="box">
+            <input type="datetime-local" name="date" class="box">
+            <input type="submit" value="Reservar uma mesa" class="btn">
+        </form>
+    </section>
+
+    <!-- RODAPÉ -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>nossas filiais</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Maputo </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Matola </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Beira </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Nampula </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Pemba </a>
+            </div>
+            
+            <div class="box">
+                <h3>links rápidos</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> início </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> sobre </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> menu </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> avaliação </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> reserva </a>
+            </div>
+            <div class="box">
+                <h3>informações de contato</h3>
+                <a href="#"> <i class="fas fa-phone"></i> 821123456 </a>
+                <a href="#"> <i class="fas fa-phone"></i> 848265432 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> contacto@gmail.com </a>
+                <a href="#"> <i class="fas fa-envelope"></i> suporte@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Maputo, Moçambique - 1100 </a>
+            </div>
+            
+            <div class="box">
+                <h3>siga-nos</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+        </div>
+        <div class="credit"> criado por <span>Yuran Stefan</span> | todos os direitos reservados </div>
+    </section>
+
+    <!-- Link do Arquivo JS Personalizado  -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: 'menu.php',
+                method: 'GET',
+                success: function (data) {
+                    let menuItems = '';
+                    data.forEach(function (item) {
+                        menuItems += `
+                            <div class="box">
+                                <h3>${item.name}</h3>
+                                <p>${item.description}</p>
+                                <span>${item.price}</span>
+                            </div>`;
+                    });
+                    $('#menu-items').html(menuItems);
+                },
+                error: function (error) {
+                    console.log('Error:', error);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
